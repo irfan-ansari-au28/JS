@@ -12,14 +12,14 @@
         */
 //   Q.2.
 
-let input = 5;
+// let input = 5;
 
-for (let i = 1; i < input; i++) {
-  for (let j = 0; j < i; j++) {
-    console.log(j + 1);
+// for (let i = 1; i < input; i++) {
+//   for (let j = 0; j < i; j++) {
+//     console.log(j + 1);
     //need to change line here
-  }
-}
+//   }
+// }
 
 ////////
 
