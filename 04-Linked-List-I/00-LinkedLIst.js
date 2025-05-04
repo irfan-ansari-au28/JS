@@ -14,4 +14,16 @@ const node3 = new Node(15);
 node1.next = node2;
 node2.next = node3;
 
-console.log(node1); // The head of the list: Node { val: 5, next: Node { val: 10, next: [Node] } }
+
+// Print signature
+
+const printList = (head) => {
+  const values = [];
+  while (head !== null) {
+      values.push(head.val);
+      head = head.next;
+  }
+  console.log(values.join(' -> '));
+};
+
+printList(node1)
