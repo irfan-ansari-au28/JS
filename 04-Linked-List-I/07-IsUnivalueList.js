@@ -24,20 +24,20 @@ printList(head1);
 
 //---------------------------------------------
 
-const removeDuplicateRecursive = (head) => {
-    if(head === null || head.next === null) return head;
+// const removeDuplicateRecursive = (head) => {
+//     if(head === null || head.next === null) return head;
 
-    head.next = removeDuplicateRecursive(head.next);
+//     head.next = removeDuplicateRecursive(head.next);
 
-    if(head.val === head.next.val){
-        return head.next;
-    }else{
-        return head;
-    }
-}
+//     if(head.val === head.next.val){
+//         return head.next;
+//     }else{
+//         return head;
+//     }
+// }
 
-const result = removeDuplicateRecursive(head1);
-printList(result);
+// const result = removeDuplicateRecursive(head1);
+// printList(result);
 
 // Recursive Approach
 
