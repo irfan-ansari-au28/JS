@@ -32,12 +32,16 @@ f.right = h;
 //    -1         6
 
 const howHigh = (root) => {
-    if (root === null) return -1;
 
-    const leftPath = howHigh(root.left);
-    const rightPath = howHigh(root.right)
+    const que = [root];
+    let curr = null;
+    while(que.length > 0){
+        curr = que.shift();
 
-    return 1 + Math.max(leftPath, rightPath);
+        if(curr.left !== null) que.push(curr.left);
+        if(curr.right !== null) que.push(curr.right);
+    }
+    return curr.val;
 }
 
 console.log(howHigh(a));
